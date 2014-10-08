@@ -1,0 +1,16 @@
+[
+	{
+		"key": "hostEndpoint",
+		"value": "https://www.exacttargetapis.com",
+		"type": "text",
+		"name": "hostEndpoint",
+		"enabled": true
+	},
+	{
+		"key": "authEndpoint",
+		"value": "https://auth.exacttargetapis.com",
+		"type": "text",
+		"name": "authEndpoint",
+		"enabled": true
+	}
+]
