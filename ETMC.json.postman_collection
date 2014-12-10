@@ -56,6 +56,18 @@
 			"collection_id": "326bca88-8396-ae4e-d23e-0c1730562df5"
 		},
 		{
+			"id": "e6245b9d-81a8-d233-ee79-25749f7212a3",
+			"name": "Location",
+			"description": "",
+			"order": [
+				"8d97c4e8-1b62-c509-2f0b-171b4b59422a",
+				"e638fafa-aeea-72a4-1ce9-b340b34f0be9",
+				"b1d9d3a2-4ff8-4ffa-ba06-3c92a530f813"
+			],
+			"collection_name": "ExactTarget Marketing Cloud Mobile",
+			"collection_id": "326bca88-8396-ae4e-d23e-0c1730562df5"
+		},
+		{
 			"id": "ee80ebd7-3ff6-b7f8-8ecd-29f8d6c92cdc",
 			"name": "Messaging",
 			"description": "",
@@ -106,6 +118,7 @@
 	],
 	"timestamp": 1410820973115,
 	"synced": false,
+	"remoteLink": "",
 	"requests": [
 		{
 			"id": "1bc11e74-bdb1-ff8e-6bb1-2c52a7194bd4",
@@ -243,6 +256,28 @@
 			"rawModeData": ""
 		},
 		{
+			"id": "8d97c4e8-1b62-c509-2f0b-171b4b59422a",
+			"headers": "Authorization: Bearer {{accessToken}}\nContent-Type: application/json\n",
+			"url": "https://www.exacttargetapis.com/push/v1/location/",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Retrieve all locations",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1418154185509,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "326bca88-8396-ae4e-d23e-0c1730562df5",
+			"synced": false,
+			"rawModeData": ""
+		},
+		{
 			"id": "8f8d9b3a-0f00-da48-b176-34929acd9155",
 			"headers": "Authorization: Bearer {{accessToken}}\n",
 			"url": "https://www.exacttargetapis.com/platform/v1/tokenContext",
@@ -320,6 +355,28 @@
 			"responses": [],
 			"synced": false,
 			"rawModeData": "{\n  \"mobileNumbers\" : [\n  \"15037025943\"\n  ],\n  \"shortCode\" : \"64586\",\n  \"messageText\" : \"GIF\"\n}"
+		},
+		{
+			"id": "b1d9d3a2-4ff8-4ffa-ba06-3c92a530f813",
+			"headers": "Authorization: Bearer {{accessToken}}\nContent-Type: application/json\n",
+			"url": "https://www.exacttargetapis.com/push/v1/location/{locationID}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Delete Location",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1418155205989,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "326bca88-8396-ae4e-d23e-0c1730562df5",
+			"synced": false,
+			"rawModeData": ""
 		},
 		{
 			"id": "c2fc01ac-8c8a-86c1-bd50-10e2486b2240",
@@ -434,6 +491,28 @@
 			"collectionId": "326bca88-8396-ae4e-d23e-0c1730562df5",
 			"responses": [],
 			"synced": false
+		},
+		{
+			"id": "e638fafa-aeea-72a4-1ce9-b340b34f0be9",
+			"headers": "Authorization: Bearer {{accessToken}}\nContent-Type: application/json\n",
+			"url": "https://www.exacttargetapis.com/push/v1/location/",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create Location",
+			"description": "Enable create location",
+			"descriptionFormat": "html",
+			"time": 1418154929364,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "326bca88-8396-ae4e-d23e-0c1730562df5",
+			"synced": false,
+			"rawModeData": "{\n  \"name\": \"PINTS Brewing\",\n  \"location\": \"412 NW 5th Ave Portland, OR 97209\",\n  \"description\": \"PINTS Brewing\",\n  \"center\": {\n    \"latitude\": 45.526176,\n    \"longitude\": -122.675498\n  },\n  \"radius\": 50,\n  \"attributes\": [\n    {\n      \"attribute\": \"Address 1\",\n      \"value\": \"412 NW 5th Ave\"\n    },\n    {\n      \"attribute\": \"City\",\n      \"value\": \"Portland\"\n    },\n    {\n      \"attribute\": \"State\",\n      \"value\": \"OR\"\n    },\n    {\n      \"attribute\": \"Zip\",\n      \"value\": \"97209\"\n    }\n  ]\n}"
 		},
 		{
 			"id": "f913aadd-4e2f-d873-fe5f-f758674441bb",
