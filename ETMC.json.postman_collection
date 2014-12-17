@@ -1,9 +1,19 @@
 {
 	"id": "326bca88-8396-ae4e-d23e-0c1730562df5",
-	"name": "ExactTarget Marketing Cloud Mobile",
+	"name": "Salesforce Marketing Cloud",
 	"description": "",
 	"order": [],
 	"folders": [
+		{
+			"id": "c9a6b2c2-c1bb-76b2-8d76-74ce8b7f34b0",
+			"name": "Analytics",
+			"description": "",
+			"order": [
+				"47ecbd42-180f-7b74-f9a9-9a74f790e8a0"
+			],
+			"collection_name": "Salesforce Marketing Cloud",
+			"collection_id": "326bca88-8396-ae4e-d23e-0c1730562df5"
+		},
 		{
 			"id": "6a4f3dbf-7c03-e35a-3dad-98f1db83ac47",
 			"name": "Auth",
@@ -11,7 +21,7 @@
 			"order": [
 				"532ba63d-ff4d-4586-c8f5-2b37d8df118b"
 			],
-			"collection_name": "ExactTarget Marketing Cloud Mobile",
+			"collection_name": "Salesforce Marketing Cloud",
 			"collection_id": "326bca88-8396-ae4e-d23e-0c1730562df5"
 		},
 		{
@@ -21,7 +31,7 @@
 			"order": [
 				"609b994c-44bb-1299-8e23-957265d3439e"
 			],
-			"collection_name": "ExactTarget Marketing Cloud Mobile",
+			"collection_name": "Salesforce Marketing Cloud",
 			"collection_id": "326bca88-8396-ae4e-d23e-0c1730562df5"
 		},
 		{
@@ -31,7 +41,7 @@
 			"order": [
 				"9e944fd0-1a07-e3e8-ba29-2814ef7c2d28"
 			],
-			"collection_name": "ExactTarget Marketing Cloud Mobile",
+			"collection_name": "Salesforce Marketing Cloud",
 			"collection_id": "326bca88-8396-ae4e-d23e-0c1730562df5"
 		},
 		{
@@ -42,7 +52,7 @@
 				"5617240c-148d-ee7a-37f4-21f20a4c0443",
 				"c2fc01ac-8c8a-86c1-bd50-10e2486b2240"
 			],
-			"collection_name": "ExactTarget Marketing Cloud Mobile",
+			"collection_name": "Salesforce Marketing Cloud",
 			"collection_id": "326bca88-8396-ae4e-d23e-0c1730562df5"
 		},
 		{
@@ -52,7 +62,7 @@
 			"order": [
 				"54f003e1-f6f0-2204-445e-031a75ea9487"
 			],
-			"collection_name": "ExactTarget Marketing Cloud Mobile",
+			"collection_name": "Salesforce Marketing Cloud",
 			"collection_id": "326bca88-8396-ae4e-d23e-0c1730562df5"
 		},
 		{
@@ -64,7 +74,7 @@
 				"e638fafa-aeea-72a4-1ce9-b340b34f0be9",
 				"b1d9d3a2-4ff8-4ffa-ba06-3c92a530f813"
 			],
-			"collection_name": "ExactTarget Marketing Cloud Mobile",
+			"collection_name": "Salesforce Marketing Cloud",
 			"collection_id": "326bca88-8396-ae4e-d23e-0c1730562df5"
 		},
 		{
@@ -76,9 +86,10 @@
 				"e1a69c39-3f83-9132-f3a7-cbc2467140a1",
 				"37a5ea8a-33cd-bd12-b043-931a23ff85a3",
 				"c823aa3d-a3ea-3121-f235-86c785ef2e23",
-				"9f83cebc-a5b5-3639-88cd-bfcb1f0f2329"
+				"9f83cebc-a5b5-3639-88cd-bfcb1f0f2329",
+				"ed956725-9a43-2525-8108-2663247d8911"
 			],
-			"collection_name": "ExactTarget Marketing Cloud Mobile",
+			"collection_name": "Salesforce Marketing Cloud",
 			"collection_id": "326bca88-8396-ae4e-d23e-0c1730562df5"
 		},
 		{
@@ -89,7 +100,7 @@
 				"8f8d9b3a-0f00-da48-b176-34929acd9155",
 				"cf5ecd23-a914-d5c6-192a-6a854669ea7c"
 			],
-			"collection_name": "ExactTarget Marketing Cloud Mobile",
+			"collection_name": "Salesforce Marketing Cloud",
 			"collection_id": "326bca88-8396-ae4e-d23e-0c1730562df5"
 		},
 		{
@@ -101,7 +112,7 @@
 				"9a10fa96-b7ca-ef68-c1a6-aca6aae42c87",
 				"835f59d1-23d2-e99d-1979-76fc0096f403"
 			],
-			"collection_name": "ExactTarget Marketing Cloud Mobile",
+			"collection_name": "Salesforce Marketing Cloud",
 			"collection_id": "326bca88-8396-ae4e-d23e-0c1730562df5"
 		},
 		{
@@ -112,7 +123,7 @@
 				"d6dde5dc-5844-8ddb-9597-b6c4c5f9454e",
 				"1bc11e74-bdb1-ff8e-6bb1-2c52a7194bd4"
 			],
-			"collection_name": "ExactTarget Marketing Cloud Mobile",
+			"collection_name": "Salesforce Marketing Cloud",
 			"collection_id": "326bca88-8396-ae4e-d23e-0c1730562df5"
 		}
 	],
@@ -158,6 +169,30 @@
 			"collectionId": "326bca88-8396-ae4e-d23e-0c1730562df5",
 			"responses": [],
 			"synced": false
+		},
+		{
+			"id": "47ecbd42-180f-7b74-f9a9-9a74f790e8a0",
+			"headers": "Content-Type: application/json\n",
+			"url": "https://consumer.exacttargetapis.com/device/v1/event/analytic",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"name": "AnalyticEvent",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1418250279426,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "326bca88-8396-ae4e-d23e-0c1730562df5",
+			"synced": false,
+			"isFromCollection": true,
+			"collectionRequestId": "400e5d31-f86d-7648-0e8c-78076fb5a80c",
+			"rawModeData": "  {\n    \"etAppId\": \"\",\n    \"deviceId\": \"\",\n    \"eventDate\": \"\",\n    \"analyticTypes\": [\n        1, 2, 5\n    ],\n    \"objectIds\": [\n        \"[MjM0OjExNDow]\"\n    ],\n    \"value\": 123\n  },\n  {\n    \"etAppId\": \"\",\n    \"deviceId\": \"\",\n    \"eventDate\": \"[2013-07-11T09:34:55.547Z]\",\n    \"analyticTypes\": [\n        1, 2, 6\n    ],\n    \"objectIds\": [\n        \"[MjQ1OjExNDow]\",\n        \"[MTU6MTI4OjA]\"\n    ]\n  }"
 		},
 		{
 			"id": "532ba63d-ff4d-4586-c8f5-2b37d8df118b",
@@ -513,6 +548,27 @@
 			"collectionId": "326bca88-8396-ae4e-d23e-0c1730562df5",
 			"synced": false,
 			"rawModeData": "{\n  \"name\": \"PINTS Brewing\",\n  \"location\": \"412 NW 5th Ave Portland, OR 97209\",\n  \"description\": \"PINTS Brewing\",\n  \"center\": {\n    \"latitude\": 45.526176,\n    \"longitude\": -122.675498\n  },\n  \"radius\": 50,\n  \"attributes\": [\n    {\n      \"attribute\": \"Address 1\",\n      \"value\": \"412 NW 5th Ave\"\n    },\n    {\n      \"attribute\": \"City\",\n      \"value\": \"Portland\"\n    },\n    {\n      \"attribute\": \"State\",\n      \"value\": \"OR\"\n    },\n    {\n      \"attribute\": \"Zip\",\n      \"value\": \"97209\"\n    }\n  ]\n}"
+		},
+		{
+			"id": "ed956725-9a43-2525-8108-2663247d8911",
+			"headers": "Authorization: Bearer {{accessToken}}\nContent-Type: application/json\n",
+			"url": "{{hostEndpoint}}/push/v1/message",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1418318622605,
+			"name": "Create Message",
+			"description": "Create a message placeholder in the MarketingCloud",
+			"collectionId": "326bca88-8396-ae4e-d23e-0c1730562df5",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n    \"messageType\": 1,\n    \"contentType\": 1,\n    \"sendIndicator\" : 1,\n  \"status\" : 1,\n  \"startDate\": \"2014-12-10T14:50:00Z\",\n  \"sendInitiator\" : 1,\n    \"name\": \"API Created Message 6\",\n    \"application\": {\n        \"id\": \"5248db1e-cac2-4cc8-a587-cb9875bdbd60\",\n        \"name\": \"Public Demo Application\"\n    },\n    \"alert\": \"Alert message to show on device\",\n    \"sound\": \"default\",\n    \"badge\": \"+1\",\n    \"contentAvailable\": 1,\n  \"openDirect\": \"http://www.url.com/\",\n    \"keys\": [\n        { \"key\": \"locationid\", \"value\": \"582\" }\n    ],\n  \"IncludedAudiences\" : [\n    { \"id\" : \"VE1aTk5qeU5FZVNZQlhqanRRdFBBQTo2Mzow\"}\n  ]\n}"
 		},
 		{
 			"id": "f913aadd-4e2f-d873-fe5f-f758674441bb",
