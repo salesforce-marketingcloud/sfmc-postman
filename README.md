@@ -1,11 +1,11 @@
-etmc-postman
+sfmc-postman
 ============
 
 The files in this repository are meant to be leveraged with the Google Chrome application Postman. Postman can be installed from here: https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en
 
 The current files are the following:
 
-ETMC.json.postman_collection: This file needs to be imported into Postman. It builds the actual REST calls to the ETMC API.
+SFMC.json.postman_collection: This file needs to be imported into Postman. It builds the actual REST calls to the SFMC API.
 
 globals.postman_globals: This file needs to be imported into Postman. It contains all of the global environment variables needed to setup API calls. You should add variables in here that apply to all sub-environments/profiles. 
 
