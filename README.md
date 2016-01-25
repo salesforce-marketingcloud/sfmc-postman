@@ -39,7 +39,7 @@ To import globals:
 
 Currently, Postman does not have the ability to import Globals. Instead, simply add the two key / value pairs by hand in the Postman interface.
 
-![alt tag](../images/globals.png)
+![alt tag](./images/globals.png)
 
 
 
