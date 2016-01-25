@@ -22,6 +22,27 @@ You will need to fill out the soapEndPoint variable plus at least one of the fol
 
 > * You must call the Auth/RequestToken REST API to get a 60 minute accessToken before making subsequent token based SOAP API calls.
 
+### Importing into Postman
+You'll want to import this collection and environment variables into your instance of Postman.
+
+To import the Collection:
+![alt tag](./images/import-collection.png)
+
+Once this is completed, you will have a new collection inside your Postman instance. 
+
+To import an environment*:
+![alt tag](./images/manage-environment.png)
+
+* Recommendation is to edit this file *first* with your favorite editor. Don't worry about filling out every single value in the file, the import values to complete are for the keys (clientId, clientSecret)
+
+To import globals:
+
+Currently, Postman does not have the ability to import Globals. Instead, simply add the two key / value pairs by hand in the Postman interface.
+
+![alt tag](../images/globals.png)
+
+
+
 ### Additional Resources
 - CODE@ App Center for creating clientId and clientSecret per SFMC business unit is here: [https://appcenter-auth.exacttargetapps.com/]()
 - SOAP API end point information here: [http://help.exacttarget.com/en/technical_library/web_service_guide/working_with_soap_web_service_api/]()
