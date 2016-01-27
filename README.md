@@ -1,7 +1,7 @@
 # sfmc-postman
 SFMC = Salesforce Marketing Cloud
 
-The files in this repository are to be leveraged with the Google Chrome application Postman. Postman can be installed from here: [http://www.getpostman.com/]()
+The files in this repository are to be leveraged with the Google Chrome application Postman. Postman can be installed from here: [http://www.getpostman.com/](http://www.getpostman.com)
 
 Below are the current file descriptions.
 
