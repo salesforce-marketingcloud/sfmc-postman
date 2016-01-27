@@ -6,7 +6,6 @@ The files in this repository are to be leveraged with the Google Chrome applicat
 Below are the current file descriptions.
 
 - **SFMC.json.postman_collection**: This file needs to be imported into Postman. It hosts the actual REST and SOAP calls to the SFMC API.
-- **globals.postman_globals**: This file needs to be imported into Postman. It contains the global environment variables needed to setup REST API calls. You should add variables in here that apply to all sub-environments/profiles.
 - **useraccount.postman_environment**: This file needs to be imported into Postman. It contains environment variables specific to each individual SFMC account you want to access. You can clone to setup multiple SFMC accounts as needed.
 
 ### REST API Requirements
