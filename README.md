@@ -35,13 +35,15 @@ To import an environment*:
 
 * Recommendation is to edit this file *first* with your favorite editor. Don't worry about filling out every single value in the file, the import values to complete are for the keys (clientId, clientSecret)
 
-To import globals:
+Once you have completed both imports, you are ready to finish setting up the envrionment. In this last step, Postman will setup the rest of the needed environment variables.
 
-Currently, Postman does not have the ability to import Globals. Instead, simply add the two key / value pairs by hand in the Postman interface.
+First run the authentication call:
 
-![alt tag](./images/globals.png)
+![alt tag](./images/retrieveauthtoken.png)
 
+Second, run the Platform/Retrieve Endpoints call to inject the SOAP & Rest variables into you current environment.
 
+![alt tag](./images/neededcalls.png)
 
 ### Additional Resources
 - CODE@ App Center for creating clientId and clientSecret per SFMC business unit is here: [https://appcenter-auth.exacttargetapps.com/]()
