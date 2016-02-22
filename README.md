@@ -22,7 +22,7 @@ You will need to fill out the soapEndPoint variable plus at least one of the fol
 > * You must call the Auth/RequestToken REST API to get a 60 minute accessToken before making subsequent token based SOAP API calls.
 
 ### Social API Requirements
-To leverage the Social API you will need to have created an API key in Social Studio. Information on creating an API key can be ofound here: https://developer.salesforce.com/docs/atlas.en-us.api_social.meta/api_social/1-enable-api-applications-for-tenant.htm
+To leverage the Social API you will need to have created an API key in Social Studio. Information on creating an API key can be found here: [Enable API for Applications](https://developer.salesforce.com/docs/atlas.en-us.api_social.meta/api_social/1-enable-api-applications-for-tenant.htm)
 
 For variables you will need to set:
 socialClientKey - created when you create the API application
@@ -31,6 +31,8 @@ r6Username - your Social Studio username
 r6Password - your Social Studio password
 
 After you have completed this, please re-run SFMC - Platform "Retrieve Endpoints", this will setup a needed Social Studio variable and verify you have all of the needed SFMC variables set.
+
+Note: when you call Get Social API Token, your Social API Token will automatically be set into the environment: access_token
 
 ### Importing into Postman
 You'll want to import this collection and environment variables into your instance of Postman.
