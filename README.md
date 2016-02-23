@@ -25,10 +25,10 @@ You will need to fill out the soapEndPoint variable plus at least one of the fol
 To leverage the Social API you will need to have created an API key in Social Studio. Information on creating an API key can be found here: [Enable API for Applications](https://developer.salesforce.com/docs/atlas.en-us.api_social.meta/api_social/1-enable-api-applications-for-tenant.htm)
 
 For variables you will need to set:
-socialClientKey - created when you create the API application
-socialClientSecret - created when you create the API application
-r6Username - your Social Studio username
-r6Password - your Social Studio password
+* <b>socialClientKey</b> - created when you create the API application
+* <b>socialClientSecret</b> - created when you create the API application
+* <b>r6Username</b> - your Social Studio username
+* <b>r6Password</b> - your Social Studio password
 
 After you have completed this, please re-run SFMC - Platform "Retrieve Endpoints", this will setup a needed Social Studio variable and verify you have all of the needed SFMC variables set.
 
