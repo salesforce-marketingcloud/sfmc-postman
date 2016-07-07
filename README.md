@@ -1,6 +1,4 @@
-# sfmc-postman
-
-** NOT AN OFFICIALLY SUPPORTED PRODUCT **
+# sfmc-postman (not officially supported)
 
 SFMC = Salesforce Marketing Cloud
 
