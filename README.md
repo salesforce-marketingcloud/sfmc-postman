@@ -28,8 +28,8 @@ To leverage the Social API you will need to have created an API key in Social St
 For variables you will need to set:
 * <b>socialClientKey</b> - created when you create the API application
 * <b>socialClientSecret</b> - created when you create the API application
-* <b>r6Username</b> - your Social Studio username
-* <b>r6Password</b> - your Social Studio password
+* <b>r6username</b> - your Social Studio username
+* <b>r6password</b> - your Social Studio password
 
 After you have completed this, please re-run SFMC - Platform "Retrieve Endpoints", this will setup a needed Social Studio variable and verify you have all of the needed SFMC variables set.
 
