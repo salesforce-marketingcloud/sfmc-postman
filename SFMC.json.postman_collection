@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "Salesforce Marketing Cloud",
-		"_postman_id": "f1cb6376-f825-57a8-71a2-fd7c6d2d3d4c",
+		"_postman_id": "6bcd2433-39f5-daf7-e034-39d88614edea",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -196,7 +196,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "Retrieve a Campaign\n\nhttps://code.exacttarget.com/apis-sdks/rest-api/v1/hub/campaigns/getCampaign.html"
 					},
 					"response": []
@@ -243,7 +246,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "https://code.exacttarget.com/apis-sdks/rest-api/v1/hub/campaigns/getCampaignAsset.html"
 					},
 					"response": []
@@ -454,7 +460,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -794,7 +803,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -984,7 +996,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "retrieves the tracking history of a message to a mobile number"
 					},
 					"response": []
@@ -1006,7 +1021,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "retrieves the tracking history of a queued MO"
 					},
 					"response": []
@@ -1028,7 +1046,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "retrieves the status of a message to a contact"
 					},
 					"response": []
@@ -1126,7 +1147,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "Returns information about the authenticated token"
 					},
 					"response": []
@@ -1182,7 +1206,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "Gets endpoint data"
 					},
 					"response": []
@@ -1316,7 +1343,66 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SFMC - SOAP - Automation",
+			"description": "",
+			"item": [
+				{
+					"name": "Automation Start",
+					"request": {
+						"url": "{{soapEndPoint}}",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "SOAPAction",
+								"value": "Perform",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\n        <PerformRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n            <Action>start</Action>\n            <Definitions>\n                <Definition xsi:type=\"Automation\">\n                    <ObjectID>{{automationObjectID}}</ObjectID>\n                </Definition>\n            </Definitions>\n        </PerformRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Automation Retrieve Status",
+					"request": {
+						"url": "{{soapEndPoint}}",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml",
+								"description": ""
+							},
+							{
+								"key": "SOAPAction",
+								"value": "Retrieve",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n   \t      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken u:Id=\"uuid-4e7d733b-f16d-44e1-b947-b27ce4cda3fe-1\">\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <ObjectType>Automation</ObjectType>\n            <Properties>ProgramID</Properties>\n            <Properties>Name</Properties>\n            <Properties>Description</Properties>\n            <Properties>RecurrenceID</Properties>\n            <Properties>CustomerKey</Properties>\n            <Properties>IsActive</Properties>\n            <Properties>CreatedDate</Properties>\n            <Properties>ModifiedDate</Properties>\n            <Properties>Status</Properties>\n            <Filter xsi:type=\"SimpleFilterPart\">\n               <Property>CustomerKey</Property>\n               <SimpleOperator>equals</SimpleOperator>\n               <Value>{{automationExtCustKey}}</Value>\n            </Filter>\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
 						"description": ""
 					},
 					"response": []
@@ -1721,7 +1807,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -1838,7 +1927,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -1855,7 +1947,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -1878,7 +1973,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -1901,7 +1999,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -1933,7 +2034,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2191,7 +2295,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2314,7 +2421,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2331,7 +2441,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2354,7 +2467,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2377,7 +2493,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2394,7 +2513,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2411,7 +2533,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2428,7 +2553,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2445,7 +2573,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2462,7 +2593,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2489,7 +2623,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "Get posts that match the topic within the last 24 hours."
 					},
 					"response": []
@@ -2512,7 +2649,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2529,7 +2669,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2546,7 +2689,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2588,7 +2734,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "{\n  \"status\": true,\n  \"response\": {\n    \"items\": [\n      {\n        \"criteria\": \"submitter\",\n        \"operator\": \"equals\",\n        \"argument\": 219472\n      },\n      {\n        \"criteria\": \"social account\",\n        \"operator\": \"equals\",\n        \"argument\": 805927\n      }\n    ],\n    \"query\": \"1 AND 2\"\n  },\n  \"meta\": []\n}"
 					},
 					"response": []
@@ -2605,7 +2754,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "{\n  \"status\": true,\n  \"response\": {\n    \"items\": [\n      {\n        \"criteria\": \"submitter\",\n        \"operator\": \"equals\",\n        \"argument\": 219472\n      },\n      {\n        \"criteria\": \"social account\",\n        \"operator\": \"equals\",\n        \"argument\": 805927\n      }\n    ],\n    \"query\": \"1 AND 2\"\n  },\n  \"meta\": []\n}"
 					},
 					"response": []
@@ -2642,7 +2794,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": "{\n  \"status\": true,\n  \"response\": {\n    \"items\": [\n      {\n        \"criteria\": \"user\",\n        \"operator\": \"equals\",\n        \"argument\": \"219472\",\n        \"action\": \"approve\"\n      }\n    ],\n    \"query\": \"1\"\n  },\n  \"meta\": []\n}"
 					},
 					"response": []
@@ -2729,7 +2884,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2757,7 +2915,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2785,7 +2946,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2827,7 +2991,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2849,7 +3016,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -2886,7 +3056,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -3049,7 +3222,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -3066,7 +3242,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -3159,7 +3338,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -3256,7 +3438,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -3278,7 +3463,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -3376,7 +3564,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -3393,7 +3584,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -3410,7 +3604,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -3427,7 +3624,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -3499,7 +3699,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -3811,7 +4014,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -3833,7 +4039,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
