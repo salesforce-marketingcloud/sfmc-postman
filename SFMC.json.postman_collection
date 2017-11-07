@@ -830,7 +830,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\"ContactID\":\"[contactID]\",\n\"EventDefinitionKey\":\"[EventDefinitionKey]\",\n\"Data\": {\n\t[Data]  \n}\n}"
+							"raw": "{\n\"ContactKey\":\"[contactKey]\",\n\"EventDefinitionKey\":\"[EventDefinitionKey]\",\n\"Data\": {\n\t[Data]  \n}\n}"
 						},
 						"description": ""
 					},
