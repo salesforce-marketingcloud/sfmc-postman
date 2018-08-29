@@ -2207,7 +2207,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <!--\n             <ClientIDs>\n                <ID>1340293</ID>\n             </ClientIDs>\n             <QueryAllAccounts>true</QueryAllAccounts>\n            -->\n            <ObjectType>Send</ObjectType>\n            <Properties>ID</Properties>\n            <Properties>EmailName</Properties>\n            <Properties>Subject</Properties>\n            <Properties>SendDate</Properties>\n            <Properties>FromName</Properties>\n            <Properties>FromAddress</Properties>\n            <Properties>UniqueOpens</Properties>\n            <Properties>UniqueClicks</Properties>\n            <Properties>Unsubscribes</Properties>\n            <Properties>NumberSent</Properties>\n            <Properties>NumberDelivered</Properties>\n            <Properties>NumberErrored</Properties>\n            <Properties>NumberExcluded</Properties>\n            <Properties>HardBounces</Properties>\n            <Properties>SoftBounces</Properties>\n            <Properties>OtherBounces</Properties>\n            <Filter xsi:type=\"SimpleFilterPart\">\n               <Property>ID</Property>\n               <SimpleOperator>equals</SimpleOperator>\n               <Value>364147</Value>\n            </Filter>\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <!--\n             <ClientIDs>\n                <ID>1340293</ID>\n             </ClientIDs>\n             <QueryAllAccounts>true</QueryAllAccounts>\n            -->\n            <ObjectType>Send</ObjectType>\n            <Properties>ID</Properties>\n            <Properties>EmailName</Properties>\n            <Properties>Subject</Properties>\n            <Properties>SendDate</Properties>\n            <Properties>FromName</Properties>\n            <Properties>FromAddress</Properties>\n            <Properties>UniqueOpens</Properties>\n            <Properties>UniqueClicks</Properties>\n            <Properties>Unsubscribes</Properties>\n            <Properties>NumberSent</Properties>\n            <Properties>NumberDelivered</Properties>\n            <Properties>NumberErrored</Properties>\n            <Properties>NumberExcluded</Properties>\n            <Properties>HardBounces</Properties>\n            <Properties>SoftBounces</Properties>\n            <Properties>OtherBounces</Properties>\n            <!--<Filter xsi:type=\"SimpleFilterPart\">-->\n            <!--   <Property>ID</Property>-->\n            <!--   <SimpleOperator>equals</SimpleOperator>-->\n            <!--   <Value>364147</Value>-->\n            <!--</Filter>-->\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
 						},
 						"url": {
 							"raw": "{{soapEndPoint}}",
@@ -2255,7 +2255,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body>\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <ObjectType>SentEvent</ObjectType>\n            <Properties>Client.ID</Properties>\n            <Properties>TriggeredSendDefinitionObjectID</Properties>\n            <Properties>SendID</Properties>\n            <Properties>SubscriberKey</Properties>\n            <Properties>EventDate</Properties>\n            <Properties>EventType</Properties>\n            <Properties>BatchID</Properties>\n            <Properties>ListID</Properties>\n            <!-- If you want to limit the results returned by date\n            <Filter xsi:type=\"ns1:SimpleFilterPart\" xmlns:ns1=\"http://exacttarget.com/wsdl/partnerAPI\">\n               <Property>EventDate</Property>\n               <SimpleOperator>between</SimpleOperator>\n               <DateValue>2009-06-30T03:00:00.000Z</DateValue>\n               <DateValue>2017-03-02T02:59:59.999Z</DateValue>\n            </Filter>\n            -->\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body>\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <ObjectType>Send</ObjectType>\n            <Properties>EmailName</Properties>\n            <Properties>HardBounces</Properties>\n            <!--<Properties>SendID</Properties>-->\n            <!--<Properties>SubscriberKey</Properties>-->\n            <!--<Properties>EventDate</Properties>-->\n            <!--<Properties>EventType</Properties>-->\n            <!--<Properties>BatchID</Properties>-->\n            <!--<Properties>ListID</Properties>-->\n            <!-- If you want to limit the results returned by date\n            <Filter xsi:type=\"ns1:SimpleFilterPart\" xmlns:ns1=\"http://exacttarget.com/wsdl/partnerAPI\">\n               <Property>EventDate</Property>\n               <SimpleOperator>between</SimpleOperator>\n               <DateValue>2009-06-30T03:00:00.000Z</DateValue>\n               <DateValue>2017-03-02T02:59:59.999Z</DateValue>\n            </Filter>\n            -->\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
 						},
 						"url": {
 							"raw": "{{soapEndPoint}}",
@@ -2286,6 +2286,54 @@
 								"{{soapEndPoint}}"
 							]
 						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send - Retrieve U/P",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body>\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <ObjectType>SentEvent</ObjectType>\n            <!--<Properties>EmailName</Properties>-->\n            <!--<Properties>HardBounces</Properties>-->\n            <Properties>Owner</Properties>\n            <!--<Properties>SubscriberKey</Properties>-->\n            <!--<Properties>EventDate</Properties>-->\n            <!--<Properties>EventType</Properties>-->\n            <!--<Properties>BatchID</Properties>-->\n            <!--<Properties>ListID</Properties>-->\n            <!-- If you want to limit the results returned by date\n            <Filter xsi:type=\"ns1:SimpleFilterPart\" xmlns:ns1=\"http://exacttarget.com/wsdl/partnerAPI\">\n               <Property>EventDate</Property>\n               <SimpleOperator>between</SimpleOperator>\n               <DateValue>2009-06-30T03:00:00.000Z</DateValue>\n               <DateValue>2017-03-02T02:59:59.999Z</DateValue>\n            </Filter>\n            -->\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
+						"url": {
+							"raw": "{{soapEndPoint}}",
+							"host": [
+								"{{soapEndPoint}}"
+							]
+						},
+						"description": "Send properties"
+					},
+					"response": []
+				},
+				{
+					"name": "Send - TriggeredSendSummary Retrieve U/P",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body>\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <ObjectType>TriggeredSendSummary</ObjectType>\n            <Properties>Sent</Properties>\n            <Properties>CustomerKey</Properties>\n            <Properties>NotSentDueToOptOut</Properties>\n            <Properties>NotSentDueToUndeliverable</Properties>\n            <Properties>Bounces</Properties>\n            <Properties>Opens</Properties>\n            <Properties>Clicks</Properties>\n            <Properties>UniqueOpens</Properties>\n            <Properties>UniqueClicks</Properties>\n            <Properties>OptOuts</Properties>\n            <Properties>SurveyResponses</Properties>\n            <Properties>Conversions</Properties>\n            <Properties>UniqueConversions</Properties>\n            <Properties>InProcess</Properties>\n            <Properties>NotSentDueToError</Properties>\n            <!-- If you want to limit the results returned by date\n            <Filter xsi:type=\"ns1:SimpleFilterPart\" xmlns:ns1=\"http://exacttarget.com/wsdl/partnerAPI\">\n               <Property>EventDate</Property>\n               <SimpleOperator>between</SimpleOperator>\n               <DateValue>2009-06-30T03:00:00.000Z</DateValue>\n               <DateValue>2017-03-02T02:59:59.999Z</DateValue>\n            </Filter>\n            -->\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
+						"url": {
+							"raw": "{{soapEndPoint}}",
+							"host": [
+								"{{soapEndPoint}}"
+							]
+						},
+						"description": "Send properties"
 					},
 					"response": []
 				}
@@ -3815,13 +3863,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://{{r6host}}//v1/approvalprocedures/{{workspaceId}}",
+							"raw": "https://{{r6host}}/v1/approvalprocedures/{{workspaceId}}",
 							"protocol": "https",
 							"host": [
 								"{{r6host}}"
 							],
 							"path": [
-								"",
 								"v1",
 								"approvalprocedures",
 								"{{workspaceId}}"
@@ -6017,6 +6064,322 @@
 								"workspaceresources"
 							]
 						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SFMC - SOAP - Account User",
+			"item": [
+				{
+					"name": "AccountUser - Retrieve - U/P",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <ObjectType>AccountUser</ObjectType>\n            <Properties>AccountUserID</Properties>\n            <!--<Filter xmlns:q1=\"http://exacttarget.com/wsdl/partnerAPI\" xsi:type=\"q1:SimpleFilterPart\">-->\n            <!--   <q1:Property>SubscriberKey</q1:Property>-->\n            <!--   <q1:SimpleOperator>equals</q1:SimpleOperator>-->\n            <!--   <q1:Value>subkey_001</q1:Value>-->\n            <!--</Filter>-->\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
+						"url": {
+							"raw": "{{soapEndPoint}}",
+							"host": [
+								"{{soapEndPoint}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SFMC - SOAP - SentEvent",
+			"item": [
+				{
+					"name": "SentEvent - Retrieve - U/P",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <ObjectType>SentEvent</ObjectType>\n            <Properties>SubscriberKey</Properties>\n            <!--<Filter xmlns:q1=\"http://exacttarget.com/wsdl/partnerAPI\" xsi:type=\"q1:SimpleFilterPart\">-->\n            <!--   <q1:Property>SubscriberKey</q1:Property>-->\n            <!--   <q1:SimpleOperator>equals</q1:SimpleOperator>-->\n            <!--   <q1:Value>subkey_001</q1:Value>-->\n            <!--</Filter>-->\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
+						"url": {
+							"raw": "{{soapEndPoint}}",
+							"host": [
+								"{{soapEndPoint}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Analytics Use Case Requests",
+			"item": [
+				{
+					"name": "SentEvent - Retrieve",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <ObjectType>SentEvent</ObjectType>\n            <Properties>SubscriberKey</Properties>\n            <Properties>SendID</Properties>\n            <!--<Filter xmlns:q1=\"http://exacttarget.com/wsdl/partnerAPI\" xsi:type=\"q1:SimpleFilterPart\">-->\n            <!--   <q1:Property>SubscriberKey</q1:Property>-->\n            <!--   <q1:SimpleOperator>equals</q1:SimpleOperator>-->\n            <!--   <q1:Value>subkey_001</q1:Value>-->\n            <!--</Filter>-->\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
+						"url": {
+							"raw": "{{soapEndPoint}}",
+							"host": [
+								"{{soapEndPoint}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subscriber - Retrieve",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <ObjectType>Subscriber</ObjectType>\n            <Properties>SubscriberKey</Properties>\n            <Properties>EmailAddress</Properties>\n            <Properties>Status</Properties>\n            <Filter xmlns:q1=\"http://exacttarget.com/wsdl/partnerAPI\" xsi:type=\"q1:SimpleFilterPart\">\n               <q1:Property>SubscriberKey</q1:Property>\n               <q1:SimpleOperator>equals</q1:SimpleOperator>\n               <q1:Value>106206798</q1:Value>\n            </Filter>\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
+						"url": {
+							"raw": "{{soapEndPoint}}",
+							"host": [
+								"{{soapEndPoint}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BounceEvent - Retrieve",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <!--\n             <ClientIDs>\n                <ID>1340293</ID>\n             </ClientIDs>\n             <QueryAllAccounts>true</QueryAllAccounts>\n            -->\n            <ObjectType>BounceEvent</ObjectType>\n            <Properties>SendID</Properties>\n            <Properties>BounceCategory</Properties>\n            <Properties>BounceType</Properties>\n            <Filter xsi:type=\"SimpleFilterPart\">\n               <Property>SendID</Property>\n               <SimpleOperator>equals</SimpleOperator>\n               <Value>1457840</Value>\n            </Filter>\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
+						"url": {
+							"raw": "{{soapEndPoint}}",
+							"host": [
+								"{{soapEndPoint}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClickEvent - Retrieve",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <!--\n             <ClientIDs>\n                <ID>1340293</ID>\n             </ClientIDs>\n             <QueryAllAccounts>true</QueryAllAccounts>\n            -->\n            <ObjectType>ClickEvent</ObjectType>\n            <Properties>SendID</Properties>\n            <Properties>BounceCategory</Properties>\n            <Properties>BounceType</Properties>\n            <Filter xsi:type=\"SimpleFilterPart\">\n               <Property>SendID</Property>\n               <SimpleOperator>equals</SimpleOperator>\n               <Value>1457840</Value>\n            </Filter>\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
+						"url": {
+							"raw": "{{soapEndPoint}}",
+							"host": [
+								"{{soapEndPoint}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LinkSend - Retrieve",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <!--\n             <ClientIDs>\n                <ID>1340293</ID>\n             </ClientIDs>\n             <QueryAllAccounts>true</QueryAllAccounts>\n            -->\n            <ObjectType>LinkSend</ObjectType>\n            <Properties>SendID</Properties>\n            <Properties>Link.ID</Properties>\n            <Filter xsi:type=\"SimpleFilterPart\">\n               <Property>SendID</Property>\n               <SimpleOperator>equals</SimpleOperator>\n               <Value>1582495</Value>\n            </Filter>\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
+						"url": {
+							"raw": "{{soapEndPoint}}",
+							"host": [
+								"{{soapEndPoint}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Link - Retrieve Copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <!--\n             <ClientIDs>\n                <ID>1340293</ID>\n             </ClientIDs>\n             <QueryAllAccounts>true</QueryAllAccounts>\n            -->\n            <ObjectType>Link</ObjectType>\n            <Properties>ID</Properties>\n            <Properties>URL</Properties>\n            <Filter xsi:type=\"SimpleFilterPart\">\n               <Property>ID</Property>\n               <SimpleOperator>equals</SimpleOperator>\n               <Value>3802883</Value>\n            </Filter>\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
+						"url": {
+							"raw": "{{soapEndPoint}}",
+							"host": [
+								"{{soapEndPoint}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UnsubEvent - Retrieve",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <!--\n             <ClientIDs>\n                <ID>1340293</ID>\n             </ClientIDs>\n             <QueryAllAccounts>true</QueryAllAccounts>\n            -->\n            <ObjectType>UnsubEvent</ObjectType>\n            <Properties>SendID</Properties>\n            <Properties>SubscriberKey</Properties>\n            <Properties>EventType</Properties>\n            <Properties>EventDate</Properties>\n            <Properties>IsMasterUnsubscribed</Properties>\n            <Filter xsi:type=\"SimpleFilterPart\">\n               <Property>SendID</Property>\n               <SimpleOperator>equals</SimpleOperator>\n               <Value>1488034</Value>\n            </Filter>\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
+						"url": {
+							"raw": "{{soapEndPoint}}",
+							"host": [
+								"{{soapEndPoint}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ForwardedEmailOptInEvent - Retrieve",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <!--\n             <ClientIDs>\n                <ID>1340293</ID>\n             </ClientIDs>\n             <QueryAllAccounts>true</QueryAllAccounts>\n            -->\n            <ObjectType>ForwardedEmailOptInEvent</ObjectType>\n            <Properties>SendID</Properties>\n            <Properties>SubscriberKey</Properties>\n            <Properties>EventType</Properties>\n            <Properties>EventDate</Properties>\n            <Properties>OptInSubscriberKey</Properties>\n            <!--<Filter xsi:type=\"SimpleFilterPart\">-->\n            <!--   <Property>SendID</Property>-->\n            <!--   <SimpleOperator>equals</SimpleOperator>-->\n            <!--   <Value>1488034</Value>-->\n            <!--</Filter>-->\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
+						"url": {
+							"raw": "{{soapEndPoint}}",
+							"host": [
+								"{{soapEndPoint}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ForwardedEmailEvent - Retrieve",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <!--\n             <ClientIDs>\n                <ID>1340293</ID>\n             </ClientIDs>\n             <QueryAllAccounts>true</QueryAllAccounts>\n            -->\n            <ObjectType>ForwardedEmailEvent</ObjectType>\n            <Properties>SendID</Properties>\n            <Properties>SubscriberKey</Properties>\n            <Properties>EventType</Properties>\n            <Properties>EventDate</Properties>\n            <!--<Filter xsi:type=\"SimpleFilterPart\">-->\n            <!--   <Property>SendID</Property>-->\n            <!--   <SimpleOperator>equals</SimpleOperator>-->\n            <!--   <Value>1488034</Value>-->\n            <!--</Filter>-->\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
+						"url": {
+							"raw": "{{soapEndPoint}}",
+							"host": [
+								"{{soapEndPoint}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send - Retrieve Tracking",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <!--\n             <ClientIDs>\n                <ID>1340293</ID>\n             </ClientIDs>\n             <QueryAllAccounts>true</QueryAllAccounts>\n            -->\n            <ObjectType>Send</ObjectType>\n            <Properties>ID</Properties>\n            <Properties>EmailName</Properties>\n            <Properties>Subject</Properties>\n            <Properties>SendDate</Properties>\n            <Properties>FromName</Properties>\n            <Properties>FromAddress</Properties>\n            <Properties>UniqueOpens</Properties>\n            <Properties>UniqueClicks</Properties>\n            <Properties>Unsubscribes</Properties>\n            <Properties>NumberSent</Properties>\n            <Properties>NumberDelivered</Properties>\n            <Properties>NumberErrored</Properties>\n            <Properties>NumberExcluded</Properties>\n            <Properties>HardBounces</Properties>\n            <Properties>SoftBounces</Properties>\n            <Properties>OtherBounces</Properties>\n            <!--<Filter xsi:type=\"SimpleFilterPart\">-->\n            <!--   <Property>ID</Property>-->\n            <!--   <SimpleOperator>equals</SimpleOperator>-->\n            <!--   <Value>364147</Value>-->\n            <!--</Filter>-->\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
+						"url": {
+							"raw": "{{soapEndPoint}}",
+							"host": [
+								"{{soapEndPoint}}"
+							]
+						},
+						"description": "Retrieve Aggregate Send Stats"
+					},
+					"response": []
+				},
+				{
+					"name": "VersionInfo - Retrieve",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\" xmlns:u=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\">\n   <s:Header>\n      <a:Action s:mustUnderstand=\"1\">Retrieve</a:Action>\n      <a:MessageID>urn:uuid:7e0cca04-57bd-4481-864c-6ea8039d2ea0</a:MessageID>\n      <a:ReplyTo>\n         <a:Address>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</a:Address>\n      </a:ReplyTo>\n      <a:To s:mustUnderstand=\"1\">{{soapEndPoint}}</a:To>\n      <o:Security xmlns:o=\"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\" s:mustUnderstand=\"1\">\n         <o:UsernameToken>\n            <o:Username>{{soapUsername}}</o:Username>\n            <o:Password><![CDATA[{{soapPassword}}]]></o:Password>\n         </o:UsernameToken>\n      </o:Security>\n   </s:Header>\n   <s:Body xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n      <RetrieveRequestMsg xmlns=\"http://exacttarget.com/wsdl/partnerAPI\">\n         <RetrieveRequest>\n            <!--\n             <ClientIDs>\n                <ID>1340293</ID>\n             </ClientIDs>\n             <QueryAllAccounts>true</QueryAllAccounts>\n            -->\n            <ObjectType>Version</ObjectType>\n            <Properties>Version</Properties>\n            <!--<Filter xsi:type=\"SimpleFilterPart\">-->\n            <!--   <Property>ID</Property>-->\n            <!--   <SimpleOperator>equals</SimpleOperator>-->\n            <!--   <Value>364147</Value>-->\n            <!--</Filter>-->\n         </RetrieveRequest>\n      </RetrieveRequestMsg>\n   </s:Body>\n</s:Envelope>"
+						},
+						"url": {
+							"raw": "{{soapEndPoint}}",
+							"host": [
+								"{{soapEndPoint}}"
+							]
+						},
+						"description": "Retrieve Aggregate Send Stats"
 					},
 					"response": []
 				}
