@@ -1,4 +1,4 @@
-# sfmc-postman (not officially supported)
+# sfmc-postman (community supported)
 
 SFMC = Salesforce Marketing Cloud
 
