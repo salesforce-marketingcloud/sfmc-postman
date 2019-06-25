@@ -2,7 +2,7 @@
 	"info": {
 		"name": "Salesforce Marketing Cloud",
 		"_postman_id": "2e637d30-eaf6-dd10-ef4a-f97ef4cff404",
-		"description": "",
+		"description": "Bundle of actions for using the Salesforce Marketing Cloud API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
