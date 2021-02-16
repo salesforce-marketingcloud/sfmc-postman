@@ -53,7 +53,8 @@ SOAP
 - This collection is provided as-is. It's not officially supported by Salesforce or covered by SLAs.
 - API documentation is not provided with the collection. Please refer to the [official documentation](https://developer.salesforce.com/docs/atlas.en-us.mc-apis.meta/mc-apis/index-api.htm).
 - To help us better understand usage of the collection, we leverage Google Analytics. If you would like to opt out of the tracking, you can remove the Pre-request Script set at the collection level.
-	- ![Tracking Request](images/tracking-request.png)
+
+![Tracking Request](images/tracking-request.png)
 
 ## Issues and Questions
 
