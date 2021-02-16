@@ -57,10 +57,10 @@ The collection uses a series of collection variables to help streamline your cal
 
 |Variable|Example Value|Description|
 |-|-|-|
-|et_subdomain|28yte38jw4un5gkoky2w6|Tenant specific subdomain from the [Create an Installed Package in Marketing Cloud](#create-an-installed-package-in-marketing-cloud) Authentication Base URI value. **Only include the subdomain.**|
-|et_clientId|kx2xo6o2updxf2anwquyg|Client Id from the [Create an Installed Package in Marketing Cloud](#create-an-installed-package-in-marketing-cloud)|
-|et_clientSecret|gj38398t7g89nbqn58gtp|Client Secret from the [Create an Installed Package in Marketing Cloud](#create-an-installed-package-in-marketing-cloud)|
-|et_mid|14618743|MID of Messaging & Journeys business unit|
+|et_subdomain|28yte38jw4un5gkoky2w6|Tenant specific subdomain Authentication Base URI value. **Only include the subdomain.**|
+|et_clientId|kx2xo6o2updxf2anwquyg|Client Id|
+|et_clientSecret|gj38398t7g89nbqn58gtp|Client Secret|
+|et_mid|14618743|MID of business unit|
 
 
 4. Click **Save**.
@@ -74,9 +74,9 @@ The script creates two new collection level variables:
 * dne_tokenRefreshTime 
 * dne_etAccessToken 
 
-The Marketing Cloud authorization tokens are valid for 20 minutes therefore when a token is requested we create a new variable that stores the time the token was generated. Each subsequent call will use this refresh time to determine if a new token should be requested.
+The Marketing Cloud authorization tokens are valid for 20 minutes therefore when a token is requested we create a new variable called **dne_tokenRefreshTime** that stores the time the token was generated. Each subsequent call will use this refresh time to determine if a new token should be requested.
 
-The token returned in the authorization call is stored as the collection variable dne_etAccessToken. For REST calls, this token is passed in the authorization header defined by a pre-request script at the REST folder level. For SOAP calls the token is passed in the body of the SOAP envelope.
+The token returned in the authorization call is stored as the collection variable **dne_etAccessToken**. For REST calls, this token is passed in the authorization header defined by a pre-request script at the REST folder level. For SOAP calls the token is passed in the body of the SOAP envelope.
 
 
 ## Execute a Request

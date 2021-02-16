@@ -6,7 +6,7 @@ This repository is now dedicated to hosting the setup/contribution documentation
 
 A [Postman](https://www.postman.com) collection of 170+ requests for the following Salesforce APIs:
 
-REST
+**REST**
 <table>
    <tr>
       <td>
@@ -31,7 +31,7 @@ REST
    </tr>
 </table>
 
-SOAP
+**SOAP**
 <table>
    <tr>
       <td>
