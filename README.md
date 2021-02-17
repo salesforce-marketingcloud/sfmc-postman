@@ -1,8 +1,8 @@
 
-> ℹ️  **February 2021 update:** the collection sources were moved to a [Postman Public Workspace](https://www.postman.com/salesforce-developers). This makes it easier to install, update and contribute to the collection.<br/>
+> ℹ️   **February 2021 update:** the collection sources were moved to a [Postman Public Workspace](https://www.postman.com/salesforce-developers). This makes it easier to install, update and contribute to the collection.<br/><br/>
 This repository is now dedicated to hosting the setup/contribution documentation and tracking issues.
 
-# Salesforce APIs for Postman
+# Salesforce Marketing Cloud APIs for Postman
 
 A [Postman](https://www.postman.com) collection of 170+ requests for the following Salesforce APIs:
 
@@ -49,7 +49,7 @@ A [Postman](https://www.postman.com) collection of 170+ requests for the followi
 
 ![Collection Overview](images/collection-overview.png)
 
-**⚠️ Disclaimers:**
+**⚠️  Disclaimers:**
 - This collection is provided as-is. It's not officially supported by Salesforce or covered by SLAs.
 - API documentation is not provided with the collection. Please refer to the [official documentation](https://developer.salesforce.com/docs/atlas.en-us.mc-apis.meta/mc-apis/index-api.htm).
 - To help us better understand usage of the collection, we leverage Google Analytics. If you would like to opt out of the tracking, you can remove the Pre-request Script set at the collection level.
@@ -73,5 +73,5 @@ Regardless of whether you choose the desktop app or the web UI, the installation
 ## Additional Documentation
 
 - [Keeping the collection up to date](updating.md)
-- [Working with environments to connect to multiple orgs](working-with-environments.md)
+- [Working With Environments To Connect To Multiple Marketing Cloud Instances](working-with-environments.md)
 - [Contributing](contributing.md)
