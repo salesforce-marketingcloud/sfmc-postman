@@ -1,10 +1,10 @@
 [Back to main page](README.md)
 
-> Instructions updated for Postman desktop app v8
+> Instructions designed for use in the Web app or Postman's desktop app v8.
 
-# Installing with the Postman Desktop App
+# Installing the Collection
 
-
+- [Choose Your User Interface (Desktop or Web)](#choose-your-interface)
 - [Install the Postman App](#install-the-postman-app)
 - [Create an Installed Package in Marketing Cloud](#create-an-installed-package-in-marketing-cloud)
 - [Fork the Collection](#fork-the-collection)
@@ -12,9 +12,14 @@
 - [Execute a Request](#execute-a-request)
 
 
-## Install the Postman App
+## Choose Your Interface (Desktop or Web)
+
+### Postman App
 
 Download and install the Postman app from [this link](https://www.postman.com/downloads).
+
+### Web App
+Using a browser, [sign up/in to Postman](https://identity.getpostman.com/login).
 
 ## Create an Installed Package in Marketing Cloud
 

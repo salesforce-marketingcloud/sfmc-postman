@@ -63,12 +63,11 @@ Report issues and ask questions [here](https://github.com/salesforce-marketingcl
 
 ## Installation
 
-You can use the **Postman desktop app** or the **Postman web UI** to connect to Salesforce with the Salesforce APIs collection:
+You can use the **Postman desktop app** or the **Postman web UI** to connect to Marketing Cloud with the Salesforce Marketing Cloud APIs collection. 
 
-- [Install using the Postman desktop app](install-with-app.md)
-- [Install using the Postman web UI](install-with-web.md)
+- [Install the Collection](install-the-collection.md)
 
-Regardless of whether you choose the desktop app or the web UI, you can use all of the collection’s requests and your changes are synchronized between the two environments so you can easily switch between them at any time.
+Regardless of whether you choose the desktop app or the web UI, the installation steps are identical and you can use all of the collection’s requests and your changes are synchronized between the two environments so you can easily switch between them at any time.
 
 
 ## Additional Documentation
