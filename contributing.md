@@ -78,7 +78,7 @@ Use the **Workspace** menu to navigate to your public workspace and find your co
 Once you're ready to contribute, follow these steps:
 
 1. Navigate to the workspace that holds your collection
-2. Click on the “three dots” icon next to the “Salesforce APIs” collection and select **Create Pull Request** from the menu
+2. Click on the “three dots” icon next to the “Salesforce Marketing Cloud APIs” collection and select **Create Pull Request** from the menu
 
     ![Create Pull Request screenshot](images/create-pull-request.png)
 

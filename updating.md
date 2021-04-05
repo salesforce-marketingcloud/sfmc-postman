@@ -11,7 +11,7 @@ You can keep your copy of the collection up to date to benefit from new API requ
 
     ![Merge changes screenshot](images/merge-changes.png)
 
-3. If the main collection has changes, you'll see a yellow banner with a **Pull Changes** link.∏ Click the link
+3. If the main collection has changes, you'll see a yellow banner with a **Pull Changes** link. Click the link
 
     ![Pull changes screenshot](images/pull-changes.png)
 
