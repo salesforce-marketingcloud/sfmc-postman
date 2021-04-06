@@ -4,7 +4,7 @@ This repository is now dedicated to hosting the setup/contribution documentation
 
 # Salesforce Marketing Cloud APIs for Postman
 
-A [Postman](https://www.postman.com) collection of 170+ requests for the following Salesforce APIs:
+A [Postman](https://www.postman.com) collection of 140+ requests for the following Salesforce APIs:
 
 **REST**
 <table>
