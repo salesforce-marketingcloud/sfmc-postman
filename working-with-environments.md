@@ -6,7 +6,7 @@ While the variables are stored by default in the collection you can use Postman 
 
 The pre-request script has been written to determine if an environment has been selected. If it has been, the environment variables will be used for the authorization. By default in Postman the environment variables will supersede the collection level variables. 
 
-> ⚠️  Using environments means that you will store Marketing Cloud credentials in clear in Postman. Do this at your own risks.
+> ⚠️  Using environments means that you will store Marketing Cloud credentials in clear in Postman. Do this at your own risk.
 
 - [Import the Template Environment](#import-the-template-environment)
 - [Configure the Environment](#configure-the-environment)
