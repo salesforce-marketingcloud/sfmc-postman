@@ -53,7 +53,7 @@ The collection uses a series of collection variables to help streamline your cal
 
 1. Click **Salesforce Marketing Cloud APIs**
 2. Open the **Variables** tab
-3. Complete the following variables for your instance. Instructions for collecting these details can be found in the [Create an Installed Package in Marketing Cloud](#create-an-installed-package-in-marketing-cloud) section
+3. Complete the following variables for your instance by placing the values in the **Current Value** column. Instructions for collecting these details can be found in the [Create an Installed Package in Marketing Cloud](#create-an-installed-package-in-marketing-cloud) section
 
 |Variable|Example Value|Description|
 |-|-|-|
