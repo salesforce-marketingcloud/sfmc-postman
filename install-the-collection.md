@@ -33,7 +33,7 @@ Using a browser, [sign up/in to Postman](https://identity.getpostman.com/login).
 
 ## Fork the Collection
 
-Fork the collection using the following button or follow the instructions listed below.
+Fork the collection using the following button or follow the instructions listed below:
 
 ##### Option 1:
 
