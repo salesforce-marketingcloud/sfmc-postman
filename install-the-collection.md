@@ -33,6 +33,14 @@ Using a browser, [sign up/in to Postman](https://identity.getpostman.com/login).
 
 ## Fork the Collection
 
+Fork the collection using the following button or follow the instructions listed below.
+
+##### Option 1:
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/14448118-2835a976-010c-4548-92f8-f42c0382758e?action=collection%2Ffork&collection-url=entityId%3D14448118-2835a976-010c-4548-92f8-f42c0382758e%26entityType%3Dcollection%26workspaceId%3D34382471-0c97-40e5-a206-f947271665c4#?env%5BMarketing%20Cloud%20Template%20Environment%5D=W3sia2V5IjoiZXRfc3ViZG9tYWluIiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6ImV0X2NsaWVudElkIiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6ImV0X2NsaWVudFNlY3JldCIsInZhbHVlIjoiIiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJldF9taWQiLCJ2YWx1ZSI6IiIsImVuYWJsZWQiOnRydWV9XQ==)
+
+##### Option 2:
+
 1. In Postman, click on the top search bar and type **Salesforce**
 2. Click **Salesforce Developers** under Teams
 
