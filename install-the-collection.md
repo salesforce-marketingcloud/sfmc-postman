@@ -65,7 +65,7 @@ The collection uses a series of collection variables to help streamline your cal
 
 |Variable|Example Value|Description|
 |-|-|-|
-|et_subdomain|28yte38jw4un5gkoky2w6|Tenant specific subdomain Authentication Base URI value. **Only include the subdomain.**|
+|et_subdomain|28yte38jw4un5gkoky2w6|[Tenant specific subdomain](https://developer.salesforce.com/docs/atlas.en-us.mc-apis.meta/mc-apis/your-subdomain-tenant-specific-endpoints.htm) Authentication Base URI value. **Only include the subdomain.**|
 |et_clientId|kx2xo6o2updxf2anwquyg|Client Id|
 |et_clientSecret|gj38398t7g89nbqn58gtp|Client Secret|
 |et_mid|14618743|MID of business unit|
